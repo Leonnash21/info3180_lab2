@@ -14,6 +14,17 @@ from flask import render_template, request, redirect, url_for
 # Routing for your application.
 ###
 
+@app.route ('\profile/')
+def profile ():
+    """Render profile"""
+    return render_template('profile.html')
+    
+    @app.route ('\timeinfo/')
+    def timeinfo ():
+        """ Render timeinfo"""
+        return render_template ('timeinfo.py')
+        
+    
 @app.route('/')
 def home():
     """Render website's home page."""
@@ -55,4 +66,6 @@ def page_not_found(error):
 
 
 if __name__ == '__main__':
-    app.run(debug=True,host="0.0.0.0",port="8888")
+    app.run(debug=True,host="0.0.0.0",port="8080")
+
+
