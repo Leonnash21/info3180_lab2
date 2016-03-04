@@ -4,10 +4,20 @@ env
 .Python
 include
 lib
+DLLs
+Doc
+include
+Lib 
+libs
+Scripts
+tcl
+Tools
 
 # Python Packages
 *.egg
 *.egg-info
+*.exe
+*.dll
 bin
 build
 dist
@@ -19,8 +29,14 @@ var
 develop-eggs
 .installed.cfg
 
+
+License.txt
+News.txt
+README.txt
+
 # Pip Installer Log
 pip-log.txt
+
 
 # Unit test / coverage
 .coverage
