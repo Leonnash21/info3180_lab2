@@ -1,5 +1,3 @@
-import datetime
+import time
 
-now = datetime.datetime.now()
-
-print ("Today is: %a"now, "%d"now, "%b "now, "Y" now ) 
+{{timeinfo}}

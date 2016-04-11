@@ -9,6 +9,9 @@ This file creates your application.
 from app import app
 from flask import render_template, request, redirect, url_for
 from datetime import datetime, date
+import time
+from time import strftime 
+
 
 
 ###
@@ -17,13 +20,19 @@ from datetime import datetime, date
 
 @app.route ('/profile/')
 def profile ():
-    """Render profile"""
-    return render_template('profile.html')
     
-@app.route ('/profile/')
+     time_info =  datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+     
+     """Render profile"""
+     
+     return render_template('profile.html')
+    
+@app.route ('/timeinfo/')
 def timeinfo ():
+    
     """ Render timeinfo"""
-    time_info = datetime.now().strftime('%a-%m-%d-%Y')
+    
+    time_info =  datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     return time_info
     
 @app.route('/')
