@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ----------------------
 # Flask
 # ----------------------
@@ -14,3 +15,13 @@ mock
 # Production Server
 # ----------------------
 gunicorn
+=======
+Flask==0.12
+Jinja2==2.9.4
+MarkupSafe==0.23
+Werkzeug==0.11.15
+click==6.7
+gunicorn==19.6.0
+itsdangerous==0.24
+wsgiref==0.1.2
+>>>>>>> ff70fe011bdd3fa076a6fd0198eb637de3b471ab

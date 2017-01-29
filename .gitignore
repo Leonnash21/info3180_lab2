@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Virtualenv
 venv
 env
@@ -49,3 +50,15 @@ pip-log.txt
 *.[oa]
 *.py[co]
 *.rbc
+=======
+# Files to ignore when adding and committing files to a repository
+.DS_Store
+Thumbs.db
+
+*.py[cod]
+*$py.class
+
+# virtualenv
+.venv/
+venv/
+>>>>>>> ff70fe011bdd3fa076a6fd0198eb637de3b471ab
